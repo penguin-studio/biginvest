@@ -210,6 +210,7 @@ textarea
   td:nth-child(3)
     display: block
 
+// Compare table
 .bi-compare-table
   text-align: center
   thead
@@ -230,6 +231,33 @@ textarea
     color: #ff383d
     font-size: 28px
     background: transparent
+
+// Card
+.bi-card-content
+  .bi-card-content-table
+    tr
+      td
+        padding: 10px 10px
+      td:first-child
+        background: $color-background-thead
+        vertical-align: top
+      td:nth-child(3)
+        vertical-align: top
+        text-align: right
+    img
+      display: block
+    img + a
+      border-bottom: 2px dotted #ff383d
+      text-decoration: none
+      color: $color-link
+      margin-right: 10px
+  .bi-card-content-about
+    h2
+      margin-top: 40px
+      margin-bottom: 25px
+    p
+      margin-bottom: 20px
+      text-align: justify
 
 //Aside
 .bi-ads-banner
