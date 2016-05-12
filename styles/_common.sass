@@ -98,6 +98,8 @@ textarea
   text-align: center
   thead
     background: $color-background-thead
+  tr
+    margin: 10px 0
   td
     padding: 10px
     border-right: 1px solid #e3e0e0
@@ -106,10 +108,10 @@ textarea
   td:nth-child(2)
     position: relative
     &:hover .bi-hover-decription
-      opacity: 1
+      visibility: visible
       left: 225px
     .bi-hover-decription
-      opacity: 0
+      visibility: hidden
       position: absolute
       top: 0
       left: 0
@@ -119,7 +121,7 @@ textarea
       padding: 15px 10px
       font-size: 13px
       z-index: 20
-      +transition(.3s linear)
+      +transition(visibility 0.3s, linear 0.3s)
       +box-shadow(1px 1px 2px 1px rgba(0,0,0,0.5))
       &::before
         content: ''
@@ -207,8 +209,6 @@ textarea
     span
       width: 50%
       box-sizing: border-box
-  td:nth-child(3)
-    display: block
 
 .bi-compare-table
   text-align: center
