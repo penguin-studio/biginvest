@@ -1,0 +1,190 @@
+body
+  font-family: $font-base
+  font-size: $font-size-base
+  background-color: $bg-main
+  //color: $color-text-base
+  height: 100%
+a
+  text-decoration: none
+textarea
+  resize: none
+.bi-title
+  background-color: $bg-head
+  padding: 10px 0
+  font-size: 22px
+  text-transform: $text-transform
+  text-align: center 
+.container
+  width: 1200px
+  margin: $margin_center
+  padding: 0 20px
+
+
+//Header
+.bi-header-wrapp
+  background: $bg-head
+  line-height: 50px
+  +clearfix
+  .bi-exchange
+  	float: left
+  	margin-right: 20px
+  .bi-social
+  	float: right
+.bi-logo
+  font-size: 40px
+  float: left
+.bi-header-wrapp__right
+  float: right
+.bi-main-nav
+  background-color: $bg-nav
+  a
+  	color: $bg-base
+  	text-transform: $text-transform
+.bi-main-nav__list
+  padding: 15px 0
+  +clearfix
+  li
+  	float: left
+  	margin-right: 15px
+.bi-social__list
+  +clearfix
+  li
+  	float: left
+  	margin-right: 15px
+  	&:hover a
+  	  color: $bg-head 
+  	  background-color: $bg-base
+  	a
+  	  border: 1px solid $bg-base
+  	  color: $bg-base
+  	  +transition(.3s)
+  	  &:hover
+  	    color: $bg-head 
+  	    background-color: $bg-base
+
+
+//Banner rewievs
+.bi-banner-rewievs
+  background-color: $bg-banner-rewievs
+  padding: 60px 0
+  .container
+  	+clearfix
+.bi-banner-wrapp
+  float: left
+.bi-rewievs
+  float: right
+  text-align: center
+
+
+//Main content
+.bi-main
+  padding: 20px 0
+.flex-wrap
+  display: flex
+  flex-direction: row
+  .bi-main-content
+    flex: 2 0px
+    order: 1
+    margin-right: 2%
+  .bi-sidebar
+    flex: 1
+    order: 2
+.bi-banner-wrapp-nofloat
+  margin: 20px 0
+
+//Table
+.bi-main-table
+  +clearfix
+  text-align: right
+  thead
+    background: $color-background-thead
+  td
+    padding: 10px
+    border-right: 1px solid #e3e0e0
+  td:nth-child(3), td:last-child, tr:nth-child(even) td:first-child
+    border-right: none
+  img
+    display: block
+  a
+    color: $color-link
+    text-decoration: none
+    border-bottom: 2px dotted #ff383d
+    &:hover
+      border-bottom: none
+      padding-bottom: 2px
+  img + a
+    float: right
+    border-bottom: 2px dotted #ff383d
+    &:hover
+      border-bottom: none
+      padding-bottom: 2px
+  .bi-main-table-sprite
+    border: 1px solid #e3e0e0
+    margin: 0 5px
+    a
+      display: inline-block
+      border-bottom: none
+    .bi-main-table-sprite__perfect
+      height: 9px
+      width: 12px
+      background: url(../images/sprite.png) no-repeat
+    .bi-main-table-sprite__good
+      height: 9px
+      width: 13px
+      background: url(../images/sprite.png) -12px 0 no-repeat
+    .bi-main-table-sprite__normal
+      height: 9px
+      width: 13px
+      background: url(../images/sprite.png) -25px 0 no-repeat
+    .bi-main-table-sprite__bad
+      height: 9px
+      width: 13px 
+      background: url(../images/sprite.png) -38px 0 no-repeat
+  .bi-main-table__plus
+    color: #50a418
+    font-size: 18px
+  .bi-main-table__minus
+    color: #e84318
+    font-size: 18px
+
+.bi-compare-table
+  text-align: center
+  thead
+    background: $color-background-thead
+  td
+    padding: 10px
+    border-right: 1px solid #e3e0e0
+  td:last-child, td:nth-last-child(2)
+    border-right: none
+  img
+    display: block
+  a
+    text-decoration: none
+    color: $color-text-base
+    &:hover
+      text-decoration: underline
+  .bi-main-table__deleted
+    color: #ff383d
+    font-size: 28px
+    background: transparent
+
+//Aside
+.bi-ads-banner
+  img
+    display: block
+    margin: 20px 0
+    width: 100%
+
+
+//Footer  
+.bi-footer
+  line-height: 50px
+  background-color: $bg-nav
+  .container
+  	+clearfix
+  .bi-main-nav
+  	float: left
+  .bi-social
+    float: right
+  .bi-main-nav__list
+    padding: 0
