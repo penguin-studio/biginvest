@@ -103,6 +103,49 @@ textarea
     border-right: 1px solid #e3e0e0
   td:nth-child(3), td:last-child, tr:nth-child(even) td:first-child
     border-right: none
+  td:nth-child(2)
+    position: relative
+    &:hover .bi-hover-decription
+      opacity: 1
+      left: 225px
+    .bi-hover-decription
+      opacity: 0
+      position: absolute
+      top: 0
+      left: 0
+      width: 200%
+      text-align: left
+      background-color: $bg-base 
+      padding: 15px 10px
+      font-size: 13px
+      z-index: 20
+      +transition(.3s linear)
+      +box-shadow(1px 1px 2px 1px rgba(0,0,0,0.5))
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -8px
+        width: 0
+        height: 0
+        border-top: 12px solid transparent
+        border-right: 8px solid $bg-base 
+        border-bottom: 12px solid transparent
+        z-index: 20
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: -9px
+        top: 14px
+        width: 0
+        height: 0
+        border-top: 13px solid transparent
+        border-right: 9px solid rgba(0,0,0,0.3) 
+        border-bottom: 13px solid transparent
+        z-index: 10
+      span
+        font-weight: 800
   img
     display: block
   a
