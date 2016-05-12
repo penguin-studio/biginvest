@@ -101,7 +101,7 @@ textarea
   td
     padding: 10px
     border-right: 1px solid #e3e0e0
-  td:nth-child(3), td:last-child, tr:nth-child(even) td:first-child
+  td:last-child
     border-right: none
   td:nth-child(2)
     position: relative
@@ -163,7 +163,9 @@ textarea
       padding-bottom: 2px
   .bi-main-table-sprite
     border: 1px solid #e3e0e0
-    margin: 0 5px
+    width: 50%
+    box-sizing: border-box
+    float: right
     a
       display: inline-block
       border-bottom: none
@@ -189,6 +191,24 @@ textarea
   .bi-main-table__minus
     color: #e84318
     font-size: 18px
+  .bi-main-table-top
+    +clearfix
+    margin: 10px 0
+    width: 100%
+    span
+      width: 50%
+      box-sizing: border-box
+      float: left
+      display: block
+    span + a
+      width: 50%
+      box-sizing: border-box
+  .bi-main-table-btn
+    span
+      width: 50%
+      box-sizing: border-box
+  td:nth-child(3)
+    display: block
 
 .bi-compare-table
   text-align: center
