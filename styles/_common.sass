@@ -37,15 +37,19 @@ textarea
   float: right
 .bi-main-nav
   background-color: $bg-nav
-  a
-  	color: $bg-base
-  	text-transform: $text-transform
 .bi-main-nav__list
   padding: 15px 0
+  display: flex
+  flex-flow: row wrap
   +clearfix
   li
   	float: left
   	margin-right: 15px
+  a
+    color: $bg-base
+    text-transform: $text-transform
+    &:hover
+      color: $color-link
 .bi-social__list
   +clearfix
   li
@@ -71,6 +75,8 @@ textarea
   	+clearfix
 .bi-banner-wrapp
   float: left
+  img
+    width: 100%
 .bi-rewievs
   float: right
   text-align: center
@@ -91,6 +97,8 @@ textarea
     order: 2
 .bi-banner-wrapp-nofloat
   margin: 20px 0
+  img
+    width: 100%
 
 //Table
 .bi-main-table
@@ -278,3 +286,24 @@ textarea
     float: right
   .bi-main-nav__list
     padding: 0
+
+//Responsive
+@media all and (max-width: 800px)
+  .bi-main-nav__list
+    justify-content: space-around
+@media screen and (max-width: 850px)
+  .container
+    width: auto
+  .bi-main-nav__list
+    text-align: center
+    flex-direction: column
+
+@media all and (max-width: 600px)
+  .flex-wrap
+    flex-direction: column
+    .bi-sidebar
+      flex: 1 auto
+  .bi-ads-banner 
+    img
+      width: auto
+      margin: 10px auto
